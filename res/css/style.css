@@ -54,7 +54,7 @@ a:active {
 }
 
 section {
-	margin: 80px 0;
+	padding: 80px 0;
 }
 
 h1,
@@ -185,6 +185,7 @@ header {
 		url(img/hero.jpg);
 	background-size: cover;
 	background-position: center;
+	background-attachment: fixed;
 	height: 100vh;
 }
 
@@ -241,7 +242,7 @@ header {
 /* ------------------------------- */
 
 .section-meals {
-	margin: 0;
+	padding: 0;
 }
 
 .meals-showcase {
@@ -344,4 +345,47 @@ header {
 
 .city-feature {
 	margin-bottom: 5px;
+}
+
+/* ------------------------------- */
+/* Cities */
+/* ------------------------------- */
+
+.section-testimonials {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+		url(/res/css/img/back-customers.jpg);
+	background-size: cover;
+	background-position: center;
+	color: #fff;
+	background-attachment: fixed;
+}
+
+blockquote::before {
+	content: '‟';
+	font-size: 400%;
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+blockquote {
+	padding: 4% 2%;
+	font-style: italic;
+	font-weight: 300;
+	line-height: 135%;
+	position: relative;
+}
+
+cite {
+	display: block;
+	font-size: 90%;
+	margin-top: 25px;
+}
+
+cite img {
+	height: 36px;
+	border-radius: 50%;
+	margin-right: 8px;
+	vertical-align: middle;
 }
